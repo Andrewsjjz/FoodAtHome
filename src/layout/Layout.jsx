@@ -9,7 +9,7 @@ const Layout = () => {
       <div>
       <Header/>
       </div>
-      <main className="relative z-0 top-[130px]">
+      <main className="relative z-0 top-[130px] sm:top-[110px] lg:top-[120px] md:top-[120px]">
         <Outlet />
       </main>
     </>

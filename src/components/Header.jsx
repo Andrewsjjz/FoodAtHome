@@ -3,6 +3,7 @@ import {
   BookOpenIcon,
   Bars3BottomRightIcon,
   XMarkIcon,
+  MagnifyingGlassIcon
 } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 
@@ -31,12 +32,14 @@ const Header = () => {
           </div>
 
           {nameInputVisible && (
-            <div className="p-1">
+            <div className="p-1 flex items-center border rounded-3xl mt-2">
               <input
                 type="text"
-                className="p-2 w-full sm:w-96 border rounded mt-2 text-gray-800"
-                placeholder="Ingresa tu nombre"
+                className="p-2 w-full focus:outline-none sm:w-96"
+                placeholder="Pizza, burguer, chocolate, etc..."
               />
+              <MagnifyingGlassIcon className="h-6 w-6 mr-5"/>
+
             </div>
           )}
 
